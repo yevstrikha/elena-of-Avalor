@@ -40,6 +40,14 @@ header {
     position: absolute;
     bottom: 5%;
     right: 5%; }
+  .intro .intro_btn .intro_okay {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 7px 13px;
+    display: inline-block;
+    background-color: #ccc222; }
 
 * {
   margin: 0;

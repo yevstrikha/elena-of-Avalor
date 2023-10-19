@@ -34,6 +34,15 @@ header{
       bottom: 5%;
       right: 5%;
     }
+    .intro_okay{
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      padding: 7px 13px;
+      display: inline-block;
+      background-color: #ccc222;
+    }
   }
 }
 
