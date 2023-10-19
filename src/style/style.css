@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Good Unicorn';
+  src: url("/src/fonts/GoodUnicorn-Regular.eot");
+  src: url("/src/fonts/GoodUnicorn-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/GoodUnicorn-Regular.woff2") format("woff2"), url("/src/fonts/GoodUnicorn-Regular.woff") format("woff"), url("/src/fonts/GoodUnicorn-Regular.ttf") format("truetype"), url("/src/fonts/GoodUnicorn-Regular.svg#GoodUnicorn-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Good Unicorn';
+  src: url("/src/fonts/GoodUnicorn-Regular.eot");
+  src: url("/src/fonts/GoodUnicorn-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/GoodUnicorn-Regular.woff2") format("woff2"), url("/src/fonts/GoodUnicorn-Regular.woff") format("woff"), url("/src/fonts/GoodUnicorn-Regular.ttf") format("truetype"), url("/src/fonts/GoodUnicorn-Regular.svg#GoodUnicorn-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+header {
+  display: none; }
+
+.intro {
+  height: 100vh;
+  background-size: cover; }
+  .intro .intro_img {
+    width: 100%;
+    height: 100vh; }
+    .intro .intro_img img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .intro .intro_btn img {
+    display: block;
+    width: 100%;
+    height: 100px; }
+  .intro .intro_btn .intro_prev {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    transform: rotate(180deg); }
+  .intro .intro_btn .intro_next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    right: 5%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+
+header {
+  background-color: #a2a2a2;
+  padding: 10px;
+  border-bottom: solid 2px black; }
+  header .container {
+    height: 75px;
+    align-items: center; }
+  header .home_btn, header .close_btn {
+    width: 50px;
+    cursor: pointer; }
+  header .close_btn {
+    padding: 5px; }
+
+img {
+  display: inline-block;
+  width: 100%; }
+
+.main {
+  background-color: #4acfee; }
+  .main .main_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30%;
+    margin: auto;
+    width: 80%; }
+    .main .main_blocks .task {
+      cursor: pointer;
+      border-radius: 10px;
+      height: 100px;
+      width: 100px;
+      border: solid 2px black;
+      margin-bottom: 50px;
+      background-color: #fff; }
+      .main .main_blocks .task img {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%; }
+
+.numbers {
+  display: none;
+  padding: 25px;
+  background-color: #FF00FF; }
+  .numbers .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto; }
+    .numbers .container button {
+      width: 100%;
+      height: 25px; }
+    .numbers .container .test {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      color: blue;
+      font-family: 'Good Unicorn';
+      font-size: 155px;
+      line-height: 152px; }
+      .numbers .container .test .correct_number {
+        color: green; }
+      .numbers .container .test .wrong_number {
+        color: red; }
+      .numbers .container .test input {
+        display: block;
+        font-family: 'Good Unicorn';
+        max-width: 100px;
+        width: 100%;
+        margin: auto;
+        font-size: 155px;
+        line-height: 25px;
+        border: none;
+        border-bottom: solid 2px green;
+        color: black; }
+        .numbers .container .test input:focus-visible {
+          border: solid 5px black;
+          padding: 3px; }
+
+.pop_up {
+  display: none;
+  width: 500px;
+  background-color: pink;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid red 2px;
+  border-radius: 10px;
+  padding: 25px;
+  z-index: 2; }
+  .pop_up .elena_stand {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    height: 100%; }
+    .pop_up .elena_stand img {
+      width: 100%;
+      display: block;
+      height: 100%; }
+  .pop_up h2 {
+    text-align: center;
+    font-family: 'Good Unicorn';
+    font-size: 75px;
+    line-height: 72px;
+    margin-bottom: 25px; }
+  .pop_up .answ_btns {
+    display: flex;
+    justify-content: space-between; }
+    .pop_up .answ_btns a {
+      width: 25%; }
+
+.blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px); }
+
+#overlay {
+  position: fixed;
+  display: none;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 999; }
+
+.home_menu {
+  position: absolute;
+  top: 0;
+  left: -25%;
+  height: 100vh;
+  width: 25%;
+  border: solid 2px green;
+  border-radius: 4px;
+  background-color: #d98a98;
+  padding: 30px;
+  transition: 0.3s; }
+  .home_menu .close_btn {
+    cursor: pointer;
+    width: 35px;
+    margin-left: auto; }
+
+.menu_active {
+  left: 0; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Good Unicorn';
+  src: url("GoodUnicorn-Regular.eot");
+  src: url("GoodUnicorn-Regular.eot?#iefix") format("embedded-opentype"), url("GoodUnicorn-Regular.woff2") format("woff2"), url("GoodUnicorn-Regular.woff") format("woff"), url("GoodUnicorn-Regular.ttf") format("truetype"), url("GoodUnicorn-Regular.svg#GoodUnicorn-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/*# sourceMappingURL=fonts.css.map */
