@@ -15,7 +15,8 @@ p {
   clear: both; }
 
 .book {
-  perspective: 250vw; }
+  perspective: 250vw;
+  display: none; }
 
 .book .pages {
   width: 70vw;

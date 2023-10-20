@@ -2,6 +2,16 @@ const mainNumbers = document.querySelector('.numbers .container');
 let testSum = []
 let mySum = []
 
+
+const fourNumbers = document.querySelector('.task_four');
+fourNumbers.addEventListener('click', () => {
+    document.querySelector('.numbers').style.display = 'block';
+    document.querySelector('.main_blocks').style.display = 'none';
+    // mainNumbers.innerHTML = ''
+    createTask()
+})
+
+
 function createTask() {
     for (let i = 0; i <= 5; i++) {
         let randomNumber = `${Math.floor(Math.random() * 5)} + ${Math.floor(Math.random() * 5)} `
