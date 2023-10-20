@@ -10,3 +10,30 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Nueva Std';
+  src: url('/src/fonts/nueva/NuevaStd-Bold.eot');
+  src: url('/src/fonts/nueva/NuevaStd-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/src/fonts/nueva/NuevaStd-Bold.woff2') format('woff2'),
+  url('/src/fonts/nueva/NuevaStd-Bold.woff') format('woff'),
+  url('/src/fonts/nueva/NuevaStd-Bold.ttf') format('truetype'),
+  url('/src/fonts/nueva/NuevaStd-Bold.svg#NuevaStd-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nueva Std Bold Condensed';
+  src: url('/src/fonts/nueva/NuevaStd-BoldCond.eot');
+  src: url('/src/fonts/nueva/NuevaStd-BoldCond.eot?#iefix') format('embedded-opentype'),
+  url('/src/fonts/nueva/NuevaStd-BoldCond.woff2') format('woff2'),
+  url('/src/fonts/nueva/NuevaStd-BoldCond.woff') format('woff'),
+  url('/src/fonts/nueva/NuevaStd-BoldCond.ttf') format('truetype'),
+  url('/src/fonts/nueva/NuevaStd-BoldCond.svg#NuevaStd-BoldCond') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
