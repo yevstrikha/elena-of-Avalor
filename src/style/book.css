@@ -19,7 +19,8 @@ p {
   display: none; }
 
 .book .pages {
-  width: 70vw;
+  width: 90vw;
+  margin: auto;
   position: relative;
   transform-style: preserve-3d;
   backface-visibility: hidden;
@@ -31,8 +32,8 @@ p {
   clear: none;
   position: absolute;
   top: 0;
-  width: 35vw;
-  height: 400px;
+  width: 45vw;
+  height: 450px;
   transform-origin: 0 0;
   transition: transform 1.4s;
   backface-visibility: hidden;

@@ -7,7 +7,7 @@ const fourNumbers = document.querySelector('.task_four');
 fourNumbers.addEventListener('click', () => {
     document.querySelector('.numbers').style.display = 'block';
     document.querySelector('.main_blocks').style.display = 'none';
-    // mainNumbers.innerHTML = ''
+    mainNumbers.innerHTML = ''
     createTask()
 })
 

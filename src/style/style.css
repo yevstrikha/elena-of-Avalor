@@ -252,7 +252,8 @@ img {
   border-radius: 4px;
   background-color: #e79daa;
   padding: 30px;
-  transition: 0.3s; }
+  transition: 0.3s;
+  z-index: 99; }
   .home_menu .close_btn {
     cursor: pointer;
     width: 35px;
