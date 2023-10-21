@@ -1,5 +1,4 @@
 
-
 const popUpNo = document.querySelector('.pop_up_no');
 popUpNo.addEventListener('click', () => {
     document.querySelector('.pop_up').style.display = 'none';
@@ -24,8 +23,6 @@ const mainClose = document.querySelector('.close_btn');
         document.querySelector('.main_blocks').style.display = 'flex'
 
     })
-
-
 
 
 
