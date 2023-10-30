@@ -18,13 +18,7 @@ const popUpYes = document.querySelector('.pop_up_yes');
 })
 
 const mainClose = document.querySelector('.close_btn');
-    mainClose.addEventListener('click',()=>{
-       let activeNow = document.querySelector('.active_now');
-       activeNow.style.display = 'none';
-        activeNow.classList.remove('active_now')
-        document.querySelector('.main_blocks').style.display = 'flex';
-
-    })
+    mainClose.addEventListener('click',mainMenu)
 
 
 
