@@ -12,7 +12,7 @@ function loadIntro() {
     currentImg.setAttribute('src', 'src/images/intro/intro_' + (i) + '.jpg')
 }
 
-okayIntro.style.display = 'none';
+// okayIntro.style.display = 'none';
 
 nextIntro.addEventListener('click', nextImgIntro)
 

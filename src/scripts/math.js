@@ -1,15 +1,22 @@
 const mainNumbers = document.querySelector('.numbers .container');
-let testSum = []
-let mySum = []
+let testSum = [];
+let mySum = [];
 
+
+function mathWindow(){
+    let numberItem = document.querySelector('.numbers');
+    numberItem.style.display = 'block';
+    numberItem.classList.add('active_now')
+    document.querySelector('.main_blocks').style.display = 'none';
+    mainNumbers.innerHTML = '';
+
+    testSum = []
+    mySum = []
+    createTask()
+}
 
 const fourNumbers = document.querySelector('.task_four');
-fourNumbers.addEventListener('click', () => {
-    document.querySelector('.numbers').style.display = 'block';
-    document.querySelector('.main_blocks').style.display = 'none';
-    mainNumbers.innerHTML = ''
-    createTask()
-})
+fourNumbers.addEventListener('click', mathWindow);
 
 
 function createTask() {
@@ -20,7 +27,6 @@ function createTask() {
         let myInput = document.createElement("input");
         let someNumbers = randomNumber.split('+');
         let testRes = parseInt(someNumbers[0]) + parseInt(someNumbers[1]);
-
         testSum.push(testRes);
 
         myInput.classList.add('sumRes')
@@ -34,8 +40,7 @@ function createTask() {
 
     }
 
-    const controlBtn = document.createElement('button');
-    controlBtn.textContent = 'CHECK';
+
 
 
     controlBtn.addEventListener('click', function checkMath() {
@@ -44,22 +49,32 @@ function createTask() {
             mySum.push(parseInt(resultsOfTests[i].value))
             if (mySum[i] === testSum[i]) {
                 resultsOfTests[i].classList.add('correct_number');
-                console.log(resultsOfTests[i].value)
             } else if (resultsOfTests[i].value === '') {
-                resultsOfTests[i].value = 'X'
-            } else {
+                resultsOfTests[i].value = 'X';
+            } else if(mySum[i] !== testSum[i]){
                 resultsOfTests[i].classList.add('wrong_number');
             }
+
         }
+
+    });
+    moreBtn.addEventListener('click', ()=>{
         const PopUp = document.querySelector('.pop_up');
         PopUp.style.display = 'block';
-        mainNumbers.classList.add('blur')
-
+        mainNumbers.classList.add('blur');
     })
-    mainNumbers.appendChild(controlBtn)
+
 }
 
-createTask()
+const mathButtonsContainer = document.createElement('div')
+mathButtonsContainer.classList.add('math_Buttons')
+const controlBtn = document.createElement('button');
+controlBtn.textContent = 'CHECK';
+
+const moreBtn = document.createElement('button');
+moreBtn.textContent = 'More';
 
 
-
+mathButtonsContainer.appendChild(controlBtn);
+mathButtonsContainer.appendChild(moreBtn);
+document.querySelector('.numbers').appendChild(mathButtonsContainer)

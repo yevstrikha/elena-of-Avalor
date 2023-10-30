@@ -156,15 +156,22 @@ img {
   display: none;
   padding: 25px;
   background-color: #FF00FF; }
+  .numbers .math_Buttons {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    .numbers .math_Buttons button {
+      display: inline-block;
+      width: 20%;
+      padding: 15px 23px;
+      margin: auto; }
   .numbers .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
     margin: auto; }
-    .numbers .container button {
-      width: 100%;
-      height: 25px; }
     .numbers .container .test {
       display: flex;
       align-items: center;
@@ -187,7 +194,8 @@ img {
         line-height: 25px;
         border: none;
         border-bottom: solid 2px green;
-        color: black; }
+        color: black;
+        padding: 0 10px; }
         .numbers .container .test input:focus-visible {
           border: solid 5px black;
           padding: 3px; }
